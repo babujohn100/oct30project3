@@ -31,8 +31,8 @@ def show_search():
     return redirect("/user/"+name)
     
 @app.route("/user/<username1>")
-def show_user(username1):
-    return username1
+def show_user(username):
+     return username
 
 
 if __name__ == "__main__":

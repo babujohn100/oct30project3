@@ -26,13 +26,13 @@ def show_indexpage():
     
 @app.route("/search")
 def show_search():
-    name = request.args.get('username')
+    name.request
     # here search is only a string which can be changed 
     return redirect("/user/"+name)
     
 @app.route("/user/<username1>")
-def show_user(username1):
-    return username1
+def show_user(username):
+    return username
 
 
 if __name__ == "__main__":
