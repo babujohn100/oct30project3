@@ -28,7 +28,12 @@ def show_indexpage():
 def show_search():
     name = request.args.get('username')
     # here search is only a string which can be changed 
-    return name
+    return redirect("/user/"+name)
+    
+@app.route("/user/<username>")
+def show_user(username):
+    return username
+
 
 if __name__ == "__main__":
         app.run(host=os.getenv('IP', '0.0.0.0'), port=int(os.getenv('PORT', 8080)), debug=True)
