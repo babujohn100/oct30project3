@@ -1,0 +1,38 @@
+{% extends 'base.html' %} 
+
+ 
+
+    {% block content %}
+    
+    <div class = "picture2">
+    
+    <h1 class = "steps">Steps and Notes Updater</h1>
+    
+    <form class ="form1" method="POST">
+        
+        <input class = "textfield1" id="steps" type="text" name="steps"/>
+        <label for="steps">No.of Steps</label>
+        
+        <br>
+        
+        <input class = "button1" id="notes" type="text" name="notes"/>
+        <label for="notes">Notes</label> 
+        
+        <br>
+        
+        <input class="submit" id="submit" type="submit" value="submit"/>
+        
+    </form>
+    
+    {%for walk in walks%}
+    <p><a href="/{{username1}}/calorie/{{walk._id}}">{{walk.date}} - {{walk.notes}}</a></p>
+    {% endfor %}
+    
+    </div>
+    
+    
+    {% endblock content%}
+    
+    
+    
+    

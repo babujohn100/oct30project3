@@ -1,0 +1,105 @@
+.picture{
+    background-image: url("images/walk1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.walk{
+   color: red;
+   margin-left: 500px;
+ }
+ 
+ .form{
+    width: 17%;
+    padding: 40px 100px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color:green;
+    margin-left: 500px;
+    color: blue;
+}
+
+.form1{
+    width: 20%;
+    padding: 40px 100px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color:yellow;
+    margin-left: 500px;
+    color: blue;
+    
+}
+
+.button{
+    background-color:yellow;
+    font-size: 30px;
+    margin-top: 10px;
+    border-radius:15px;
+    margin-left: 30px;
+    
+}
+
+.button1{
+    background-color:yellow;
+    text-align:center;
+    height: 50px;
+    
+}
+
+.textfield{
+    text-align:center;
+    height: 50px;
+}
+
+.textfield1{
+    text-align:center;
+    height: 50px;
+}
+
+.submit{
+    border-radius: 12px;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+.picture2{
+    background-image: url("images/walk5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+
+.picture3{
+    background-image: url("images/walk3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+
+.steps{
+   color: #f46b42;
+   margin-left: 575px;
+   
+ }
+ 
+ .calorie{
+   color: red;
+   margin-left: 575px;
+   font-size: 50px;
+   
+ }
+
+.calorie1{
+   color: red;
+   margin-left: 575px;
+   font-size: 50px;
+   
+ }
+
+ 
