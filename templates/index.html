@@ -4,18 +4,26 @@
 
 
     <form class="form" action="/search" method="GET">
-        <input class="textfield" type="text" name="username" />
-        <label for="steps" class="stepss">Name</label>
-        <input class="button" type="submit" value="Submit" />
+        <div><label for="form_name" class="stepss">Name</label></div>
+        <div><input class="textfield" id="form_name" type="text" name="username" /></div>
+        <div><input class="button" type="submit" value="Submit" /></div>
+        
+        
+        
+        
     </form>
     
-    <div class="w3-content w3-section" style="max-width:300px" "max-height=50px">
+    <div class="w3-content w3-section" style="max-height=50px">
         <img class="walk7 mySlides" src="{{url_for('static', filename='css/images/walk7.jpg')}}">
         <img class="walk7 mySlides" src="{{url_for('static', filename='css/images/walk8.jpg')}}">
         <img class="walk7 mySlides" src="{{url_for('static', filename='css/images/walk9.jpg')}}">
     </div>
     
-    <script>
+   
+
+</div>
+
+ <script>
         var myIndex = 0;
         carousel();
 
@@ -32,10 +40,8 @@
         }
     </script>
 
-</div>
-
 
 
 {% endblock content%}
 
-</div>
+
