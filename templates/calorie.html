@@ -2,13 +2,13 @@
 {% block content %}
 
 <div class="picture3">
-
+<div class="wrap">
 <h1 class= "calorie">Calorie Details</h1>
 
 <p class="calorie1">{{walk.notes.upper()}}</p>
 <p class="calorie1">{{walk.steps}}</p>
 <p class="calorie1">{{walk.date.strftime('%Y-%m-%d') }}</p>
 <p class="calorie1">{{walk.calorie}}</p>
-
+</div>
 </div>
 {% endblock content%}

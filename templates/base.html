@@ -13,12 +13,29 @@
 </head>
 
 <body>
-    
-        <h1 class="walk">Let's Enjoy the Beauty of Walk</h1>
+    <nav class="navbar">
 
-        {% block content %}
-        {% endblock content%}
-    
+
+
+        <div class="navbar-nav">
+
+
+            <a class="nav-link" href="{{url_for('show_about')}}">ABOUT</a>
+            <a class="nav-link" href="https://www.facebook.com" target="_blank">LIKE US</a>
+            <a class="nav-link" href="{{url_for('show_contact')}}">CONTACT</a>
+
+            <span class="walk">WALK APPLICATION</span>
+
+        </div>
+
+    </nav>
+
+
+
+
+
+    {% block content %} {% endblock content%}
+
 </body>
 
 </html>

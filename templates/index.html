@@ -1,18 +1,41 @@
+{% extends 'base.html' %} {% block content %}
 
-
-    
-{% extends 'base.html' %}
-
-
-
-    {% block content %}
 <div class="picture">
+
+
     <form class="form" action="/search" method="GET">
         <input class="textfield" type="text" name="username" />
-        <label for="steps">Name</label>
+        <label for="steps" class="stepss">Name</label>
         <input class="button" type="submit" value="Submit" />
     </form>
-
-    {% endblock content%}
     
+    <div class="w3-content w3-section" style="max-width:300px" "max-height=50px">
+        <img class="walk7 mySlides" src="{{url_for('static', filename='css/images/walk7.jpg')}}">
+        <img class="walk7 mySlides" src="{{url_for('static', filename='css/images/walk8.jpg')}}">
+        <img class="walk7 mySlides" src="{{url_for('static', filename='css/images/walk9.jpg')}}">
+    </div>
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</div>
+
+
+
+{% endblock content%}
+
 </div>

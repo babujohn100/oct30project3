@@ -52,6 +52,18 @@ def show_calorie(username1, calorie_id):
     walk = mongo.db[username1].find_one({"_id": ObjectId(calorie_id)})
     return render_template("calorie.html", walk=walk)
 
+@app.route("/about")
+def show_about():
+    return render_template("about.html")
+
+@app.route("/likeus")
+def show_likeus():
+    return render_template("likeus.html")
+
+
+@app.route("/contact")
+def show_contact():
+    return render_template("contact.html")
 
 
 

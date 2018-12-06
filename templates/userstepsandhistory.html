@@ -6,17 +6,17 @@
     
     <div class = "picture2">
     
-    <h1 class = "steps">Steps and Notes Updater</h1>
+    
     
     <form class ="form1" method="POST">
         
         <input class = "textfield1" id="steps" type="text" name="steps"/>
-        <label for="steps">No.of Steps</label>
+        <label for="steps" class="stepsss" >No.of Steps</label>
         
         <br>
         
         <input class = "button1" id="notes" type="text" name="notes"/>
-        <label for="notes">Notes</label> 
+        <label for="notes" class="notess">Notes</label> 
         
         <br>
         
@@ -25,7 +25,11 @@
     </form>
     
     {%for walk in walks%}
-    <p><a href="/{{username1}}/calorie/{{walk._id}}">{{walk.date}} - {{walk.notes}}</a></p>
+    
+    
+    
+    <p class="usersteps"><a href="/{{username1}}/calorie/{{walk._id}}">{{walk.date.strftime('%Y-%m-%d') }}</a></p>
+    
     {% endfor %}
     
     </div>
